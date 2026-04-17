@@ -1,8 +1,8 @@
  body {
-   background: url("background/cherry_1.jpeg") no-repeat center/cover;
+   background: url("images/background/hanamizuki.jpeg");
    background-size: cover;
    background-position: center;
-   background-color: #fdf6f8;
+   background-color: #eef3ea;
    text-align: center;
    font-family: Arial, sans-serif;
    color: #5a3e36;
@@ -21,6 +21,7 @@
    padding: 40px 20px 20px;
    padding-top: 80px;
    background: rgba(255, 255, 255, 0.3);
+   margin-bottom: 30px;
  }
 
  header h1 {
@@ -57,7 +58,7 @@
  .card {
    background-color: white;
    border-radius: 16px;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
    width: 300px;
    padding: 20px;
    text-align: center;
@@ -70,8 +71,9 @@
  /* ここに追加 */
  .jp {
   display: block;
-  font-size: 0.85em;
-  color: #7a6a65;
+  font-size: 0.9em;
+  color: #6b4f3b;
+  margin-top: 5px;
  }
 
  .card img {
@@ -114,6 +116,10 @@
  }
  nav {
    margin-top: 20px;
+ }
+
+ nav a {
+  margin: 0 10px;
  }
 
  .card-link {
@@ -199,3 +205,36 @@
    }
 
  }
+
+ /* movies（動画エリア） */
+.movies {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie p {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #4a2c2a;
+}
+
+.movies-section {
+  background: rgba(255, 255, 255, 0.65);
+  margin: 30px auto;
+  padding: 20px;
+  width: fit-content;
+  max-width: 90%;
+  border-radius: 12px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.movies-section h2 {
+  margin-bottom: 15px;
+}
+
+.movie p {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
