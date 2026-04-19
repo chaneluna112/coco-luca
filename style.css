@@ -1,5 +1,5 @@
  body {
-   background: url("background/hanamizuki.jpeg");
+   background: url("images/background/hanamizuki.jpeg");
    background-size: cover;
    background-position: center;
    background-color: #eef3ea;
@@ -58,7 +58,7 @@
  .card {
    background-color: white;
    border-radius: 16px;
-   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
    width: 300px;
    padding: 20px;
    text-align: center;
@@ -69,10 +69,16 @@
  }
 
  /* ここに追加 */
+.en {
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
  .jp {
   display: block;
   font-size: 0.9em;
   color: #6b4f3b;
+  line-height: 1.7;
   margin-top: 5px;
  }
 
@@ -119,8 +125,31 @@
  }
 
  nav a {
+  color: #4a2c2a;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
   margin: 0 10px;
  }
+
+ nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-3px;
+  width:0;
+  height:1px;
+  background:#7a8f45;
+  transition:0.3s;
+}
+
+ nav a:hover {
+  color: #7a8f45;
+ }
+
+ nav a:hover::after{
+  width:100%;
+}
 
  .card-link {
    text-decoration: none;
@@ -146,10 +175,10 @@
    max-width: 850px;
    margin: 20px auto 50px;
    padding: 0 20px 40px;
-   color: #2f1f1c; /* 少し濃く　*/
-   background: rgba(255, 255, 255, 0.65);
+   color: #4a3a33; /* 少し濃く　*/
+   background: rgba(255, 255, 255, 0.55);
    border-radius: 16px;
-   line-height: 1.8; 
+   line-height: 1.9; 
   }
 
  .story h2 {
@@ -161,11 +190,25 @@
  }
 
  .story h3 {
-  color: #4a2c2a
+  color: #4a2c2a;
+  margin-top: 28px;
+  margin-bottom: 12px;
  }
 
  .story p {
   margin-bottom: 16px;
+ }
+
+ .story .en {
+  margin-bottom: 8px;
+ }
+
+ .story .jp {
+  display: block;
+  font-size: 0.95em;
+  color: #6b4f3b;
+  line-height: 1.8;
+  margin-bottom: 14px;
  }
 
  footer {
